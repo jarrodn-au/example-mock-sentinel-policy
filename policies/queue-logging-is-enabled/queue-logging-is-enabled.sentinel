@@ -1,3 +1,5 @@
+# Policy Documentation for queue-logging-is-enabled.sentinel
+
 import "tfplan/v2" as tfplan
 
 allStorageAccounts = filter tfplan.resource_changes as _, resource_changes {

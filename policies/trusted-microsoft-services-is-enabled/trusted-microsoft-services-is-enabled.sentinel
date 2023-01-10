@@ -1,3 +1,5 @@
+# Policy Documentation for trusted-microsoft-services-is-enabled.sentinel
+
 import "tfplan/v2" as tfplan
 
 allStorageAccounts = filter tfplan.resource_changes as _, resource_changes {
@@ -31,6 +33,13 @@ network_rules_default_action_is_deny = rule when deny_undefined_network_rules_by
 	}
 }
 
+moot = func() {
+	print("This is an print statement in a function")
+	return true
+}
+
+print("This is an inline print statement")
+
 // -------------------------------------------------------------
 // Name:        trusted-microsoft-services-is-enabled.sentinel
 // Category:    Data Management
@@ -42,6 +51,8 @@ network_rules_default_action_is_deny = rule when deny_undefined_network_rules_by
 // Account access.
 // -------------------------------------------------------------
 main = rule {
+	moot() and
+	print("Failed policy printout") and
 	deny_undefined_network_rules and
 	deny_undefined_network_rules_bypass and
 	network_rules_default_action_is_deny

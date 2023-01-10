@@ -1,3 +1,5 @@
+# Policy Documentation for blob-public-access-level-set-to-private.sentinel
+
 import "tfplan/v2" as tfplan
 
 allStorageContainers = filter tfplan.resource_changes as _, resource_changes {
@@ -12,6 +14,63 @@ container_access_type_is_private = rule {
 		containers.change.after.container_access_type is "private"
 	}
 }
+
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
+print("There are many many print statements here")
 
 // -------------------------------------------------------------
 // Name:        blob-public-access-level-set-to-private.sentinel
