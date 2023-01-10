@@ -23,8 +23,8 @@ policy "rich-return-types" {
 }
 
 # Mock the TFPlan so it doesn't matter where this policy is evaluated
-mock "tfplan/v2" {
-  module {
-    source = "./policies/secure-transfer-required-is-enabled/testdata/mock-tfplan-success.sentinel"
-  }
-}
+# mock "tfplan/v2" {
+#   module {
+#     source = "./policies/secure-transfer-required-is-enabled/testdata/mock-tfplan-success.sentinel"
+#   }
+# }
