@@ -18,6 +18,10 @@ policy "queue-logging-is-enabled" {
   source = "./policies/queue-logging-is-enabled/queue-logging-is-enabled.sentinel"
 }
 
+policy "rich-return-types" {
+  source = "./policies/rich-return-types/rich-return-types.sentinel"
+}
+
 # Mock the TFPlan so it doesn't matter where this policy is evaluated
 mock "tfplan/v2" {
   module {

@@ -1,0 +1,61 @@
+# Example policy showing off rich return types
+
+# Returns a boolean
+rule_boolean = rule { true }
+
+# Returns a string
+rule_string = rule { "a string" }
+
+# Returns an integer
+rule_int = rule { 0 }
+
+# Returns a map
+rule_map = rule {
+  {
+    "key": "value",
+  }
+}
+
+# Returns an array
+rule_array = rule {
+  [0,1,2,3,4.1]
+}
+
+# Returns an array with many different types
+rule_multitype = rule {
+  [
+    {
+      "key": "value",
+    },
+    0,
+    -1,
+    34.567,
+    "string",
+    true,
+    [0,1,2,3,4],
+  ]
+}
+
+# Returns an empty map
+rule_empty_map = rule {
+  {}
+}
+
+# Returns an empty array
+rule_empty_array = rule {
+  []
+}
+
+
+# Main Rule
+main = rule {
+  rule_boolean and
+  rule_int == 0 and
+  rule_string is not empty and
+  rule_map is not empty and
+  rule_array is not empty and
+  rule_multitype is not empty and
+  rule_empty_map is empty and
+  rule_empty_array is empty and
+  true
+}
