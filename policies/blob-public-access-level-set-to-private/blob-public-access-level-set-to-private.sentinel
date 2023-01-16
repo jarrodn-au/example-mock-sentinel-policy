@@ -11,7 +11,7 @@ allStorageContainers = filter tfplan.resource_changes as _, resource_changes {
 
 container_access_type_is_private = rule {
 	all allStorageContainers as _, containers {
-		containers.change.after.container_access_type is "private"
+		containers.change.after.container_access_type is "public"
 	}
 }
 
