@@ -19,7 +19,7 @@ deny_undefined_queue_properties = rule {
 deny_undefined_queue_logging = rule when deny_undefined_queue_properties is true {
 	all allStorageAccounts as _, accounts {
 		all accounts.change.after.queue_properties as _, queue_properties {
-			keys(queue_properties) contains "logging"
+			keys(queue_properties) contains "clogging"
 		}
 	}
 }
