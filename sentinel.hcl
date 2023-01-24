@@ -1,5 +1,3 @@
-look, this is bad syntax.
-  
 policy "secure-transfer-required-is-enabled" {
   source = "./policies/secure-transfer-required-is-enabled/secure-transfer-required-is-enabled.sentinel"
   enforcement_level = "advisory"
