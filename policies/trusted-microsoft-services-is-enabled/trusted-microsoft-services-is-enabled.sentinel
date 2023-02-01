@@ -34,7 +34,7 @@ network_rules_default_action_is_deny = rule when deny_undefined_network_rules_by
 }
 
 moot = func() {
-	prin("This is an print statement in a function")
+	print("This is an print statement in a function")
 	return true
 }
 
