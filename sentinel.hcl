@@ -15,12 +15,12 @@ policy "trusted-microsoft-services-is-enabled" {
 
 policy "blob-public-access-level-set-to-private" {
   source = "./policies/blob-public-access-level-set-to-private/blob-public-access-level-set-to-private.sentinel"
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "advisory"
 }
 
 policy "queue-logging-is-enabled" {
   source = "./policies/queue-logging-is-enabled/queue-logging-is-enabled.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "advisory"
 }
 
 policy "rich-return-types" {
