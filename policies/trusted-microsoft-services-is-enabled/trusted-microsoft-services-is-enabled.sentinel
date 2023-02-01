@@ -2,8 +2,6 @@
 
 import "tfplan/v2" as tfplan
 
-baaad syntax!
-
 allStorageAccounts = filter tfplan.resource_changes as _, resource_changes {
 	resource_changes.mode is "managed" and
 		resource_changes.type is "azurerm_storage_account" and
@@ -36,7 +34,7 @@ network_rules_default_action_is_deny = rule when deny_undefined_network_rules_by
 }
 
 moot = func() {
-	print("This is an print statement in a function")
+	prin("This is an print statement in a function")
 	return true
 }
 
