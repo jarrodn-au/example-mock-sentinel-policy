@@ -25,7 +25,7 @@ policy "queue-logging-is-enabled" {
 
 policy "rich-return-types" {
   source = "./policies/rich-return-types/rich-return-types.sentinel"
-  enforcement_level = "advisory-mandatory"
+  enforcement_level = "advisory"
 }
 
 # Mock the TFPlan so it doesn't matter where this policy is evaluated
