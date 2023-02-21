@@ -36,6 +36,7 @@ print("This is a really, really, really, really, really, really, really, really,
 // set to deny.
 // -------------------------------------------------------------
 main = rule {
-	deny_undefined_network_rules and
+	this_is_undefined and
+	deny_undefined_network_rules and 
 	network_rules_default_action_is_deny
 }
