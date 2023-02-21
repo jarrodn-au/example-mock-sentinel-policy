@@ -49,7 +49,7 @@ queue_properties_logging_is_enabled = rule when deny_undefined_queue_logging is 
 // WRITE, and DELETE requests.
 // -------------------------------------------------------------
 main = rule {
-	false and
+	true and
 	deny_undefined_queue_properties and
 	deny_undefined_queue_logging and
 	queue_properties_logging_is_enabled
