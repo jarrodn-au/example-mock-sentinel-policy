@@ -83,6 +83,6 @@ print("There are many many print statements here")
 // containers.
 // -------------------------------------------------------------
 main = rule {
-	true and
+	false and
 	container_access_type_is_private
 }
