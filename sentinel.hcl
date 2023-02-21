@@ -15,7 +15,7 @@ policy "trusted-microsoft-services-is-enabled" {
 
 policy "blob-public-access-level-set-to-private" {
   source = "./policies/blob-public-access-level-set-to-private/blob-public-access-level-set-to-private.sentinel"
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "queue-logging-is-enabled" {
